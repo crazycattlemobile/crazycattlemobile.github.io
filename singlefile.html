@@ -346,12 +346,34 @@ body {
     border: none;
 }
 
+#titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#gameThumbnail {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+
     </style>
 </head>
 
 <body class="dark-mode">
     <div id="landing">
-        <h1 id="mainTitle">Play Crazy Cattle</h1>
+        <div id="titleWrapper">
+            <img id="gameThumbnail" src="https://cdn.jsdelivr.net/gh/gn-math/covers@main/164.png" alt="Crazy Cattle 3D thumbnail">
+            <h1 id="mainTitle">Play Crazy Cattle</h1>
+        </div>        
         <button id="playButton">Play Now</button>
     </div>
     <script async="async" data-cfasync="false" src="//impetusorgansseparation.com/d75581d8abd0b24f2a7f960ffb590745/invoke.js"></script>
