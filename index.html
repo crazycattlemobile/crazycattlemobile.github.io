@@ -32,31 +32,22 @@
         <h1 id="mainTitle">Play Crazy Cattle</h1>
         <button id="playButton">Play Now</button>
     </div>
-
-    <!-- Ad Script (keep this at the top so it's removed later) -->
     <script async="async" data-cfasync="false" src="//impetusorgansseparation.com/d75581d8abd0b24f2a7f960ffb590745/invoke.js"></script>
     <div id="container-d75581d8abd0b24f2a7f960ffb590745"></div>
-
-    <!-- Hidden game container -->
     <div id="gameContainer">
         <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
     </div>
-
     <script>
         const playBtn = document.getElementById("playButton");
         const landing = document.getElementById("landing");
         const gameContainer = document.getElementById("gameContainer");
         const gameFrame = document.getElementById("gameFrame");
         const adDiv = document.getElementById("container-d75581d8abd0b24f2a7f960ffb590745");
-
         playBtn.addEventListener("click", () => {
-            // Remove ads and landing UI
             landing.style.display = "none";
             if (adDiv) adDiv.remove();
-
-            // Show game
             gameContainer.style.display = "block";
-            gameFrame.src = "https://example.com/crazycattle3d"; // Replace with your actual game URL
+            gameFrame.src = "https://gn-math.github.io/html/164.html";
         });
     </script>
 </body>
